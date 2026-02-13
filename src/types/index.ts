@@ -65,7 +65,7 @@ export type DriveImage = {
 };
 
 // Interface matching the Sanity 'album' schema
-interface SanityAlbum {
+export interface SanityAlbum {
   _id: string;
   title: string;
   description: {
