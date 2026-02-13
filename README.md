@@ -2,8 +2,7 @@
 
 A modern, high-performance personal portfolio website built with **Next.js 16**, designed to showcase software engineering projects and photography galleries seamlessly.
 
-![Project Preview](./public/preview.jpg)
-*(Note: Please add a screenshot of your website here and name it preview.jpg)*
+![Project Preview](./public/example.png)
 
 **Frontend for:** [My Portfolio CMS](https://github.com/MinhNhatLuong/my-portfolio-cms)
 
