@@ -29,6 +29,8 @@ type Translation = {
     role: string;
     location: string;
     status: string;
+    nationality: string;
+    languages: string;
     techLanguages: string;
     techFrameworks: string;
     techDatabases: string;
@@ -107,6 +109,8 @@ export const dictionaries: Record<"en" | "vi" | "ja", Translation> = {
       role: "Role",
       location: "Location",
       status: "Status",
+      nationality: "Nationality",
+      languages: "Languages",
       techLanguages: "Languages",
       techFrameworks: "Frameworks",
       techDatabases: "Database / Cloud",
@@ -183,6 +187,8 @@ export const dictionaries: Record<"en" | "vi" | "ja", Translation> = {
       role: "Chức danh",
       location: "Nơi sống",
       status: "Trạng thái",
+      nationality: "Quốc tịch",
+      languages: "Ngôn ngữ",
       techLanguages: "Ngôn ngữ lập trình",
       techFrameworks: "Frameworks & Thư viện",
       techDatabases: "Cơ sở dữ liệu / Cloud",
@@ -259,11 +265,13 @@ export const dictionaries: Record<"en" | "vi" | "ja", Translation> = {
       role: "職名",
       location: "所在地",
       status: "ステータス",
+      nationality: "国籍",
+      languages: "言語",
       techLanguages: "プログラミング言語",
       techFrameworks: "フレームワーク",
       techDatabases: "データベース / クラウド",
       techTools: "ツール / その他",
-      native: "ネイティブ"
+      native: "ネイティブ",
     },
     projects: {
       title: "注目のプロジェクト",

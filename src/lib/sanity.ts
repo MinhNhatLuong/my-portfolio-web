@@ -1,5 +1,5 @@
 import { createClient } from "next-sanity";
-import imageUrlBuilder from "@sanity/image-url";
+import { createImageUrlBuilder } from "@sanity/image-url";
 
 // 1. Configure the Sanity Client
 // I use useCdn for faster response times in production
@@ -11,7 +11,7 @@ export const client = createClient({
 });
 
 // 2. Set up the image url builder
-const builder = imageUrlBuilder(client);
+const builder = createImageUrlBuilder(client);
 
 // 3. Helper function to generate image URLs from Sanity image sources
 // eslint-disable-next-line @typescript-eslint/no-explicit-any

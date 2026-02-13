@@ -94,7 +94,7 @@ export function DesktopInfoBox({ data, t, getLoc }: InfoBoxProps) {
           className="text-green-600 font-medium"
         />
         <InfoRow
-          label="Nationality"
+          label={t.nationality}
           icon={Flag}
           value={getLoc(info.nationality)}
         />
@@ -102,7 +102,7 @@ export function DesktopInfoBox({ data, t, getLoc }: InfoBoxProps) {
         {info.languages && info.languages.length > 0 && (
           <div className="pt-2 mt-2 border-t border-border/50">
             <div className="font-bold text-muted-foreground text-xs uppercase tracking-wide mb-2">
-              Languages
+              {t.languages}
             </div>
             <ul className="space-y-1.5">
               {info.languages.map((lang, idx) => (
