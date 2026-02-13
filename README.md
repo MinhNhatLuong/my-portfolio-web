@@ -1,36 +1,105 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🎨 My Personal Portfolio (Frontend)
 
-## Getting Started
+A modern, high-performance personal portfolio website built with **Next.js 16**, designed to showcase software engineering projects and photography galleries seamlessly.
 
-First, run the development server:
+![Project Preview](./public/preview.jpg)
+*(Note: Please add a screenshot of your website here and name it preview.jpg)*
+
+**Frontend for:** [My Portfolio CMS](https://github.com/MinhNhatLuong/my-portfolio-cms)
+
+## ✨ Key Features
+
+- **Dual Identity:** Specialized sections for both "Software Engineer" and "Photographer".
+- **Dynamic Content:** Fetches real-time data from Sanity CMS.
+- **Google Drive Gallery:** Directly integrates with Google Drive API to display high-quality photo albums without third-party hosting costs.
+- **Internationalization (i18n):** Native support for English (EN), Vietnamese (VI), and Japanese (JA).
+- **Theme System:** Dark/Light mode with a unique circular reveal transition effect.
+- **Responsive Design:** Fully optimized for mobile, tablet, and desktop using Tailwind CSS v4.
+
+## 🛠️ Tech Stack
+
+- **Framework:** Next.js 16 (App Router)
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS, Framer Motion (Animations)
+- **Icons:** Lucide React & React Icons
+- **Data Fetching:** Sanity Client (GROQ), Google Drive API
+- **State Management:** React Context (Theme & Language)
+
+## 🚀 Getting Started
+
+Follow these steps to set up the project locally.
+
+### 1. Prerequisites
+
+- Node.js (v18 or higher recommended)
+- npm or yarn
+
+### 2. Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/MinhNhatLuong/my-portfolio-web.git
+
+# Navigate to the project directory
+cd my-portfolio-web
+
+# Install dependencies
+npm install
+```
+
+### 3. Environment Variables (Crucial)
+
+Create a `.env.local` file in the root directory and configure the following keys:
+
+```env
+# --- SANITY CMS CONFIGURATION ---
+# Found in your Sanity Manage dashboard (https://www.sanity.io/manage)
+NEXT_PUBLIC_SANITY_PROJECT_ID=your_sanity_project_id
+NEXT_PUBLIC_SANITY_DATASET=production
+NEXT_PUBLIC_SANITY_API_VERSION=2024-02-10
+
+# --- GOOGLE DRIVE API (For Gallery) ---
+# 1. Go to Google Cloud Console.
+# 2. Enable "Google Drive API".
+# 3. Create an API Key.
+NEXT_PUBLIC_GOOGLE_API_KEY=your_google_api_key
+```
+
+### 4. Run Development Server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📂 Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+├── src/
+│   ├── app/              # Next.js App Router pages
+│   ├── components/       # Reusable UI components
+│   ├── lib/              # API clients (Sanity, Drive)
+│   ├── types/            # TypeScript interfaces
+│   ├── context/          # Global state (Theme, Language)
+│   └── constants/        # Text translations & static options
+└── public/               # Static assets
+```
 
-## Learn More
+## 🚢 Deployment
 
-To learn more about Next.js, take a look at the following resources:
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new).
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Push your code to GitHub.
+2. Import the project into Vercel.
+3. Add the **Environment Variables** (from step 3) in Vercel Project Settings.
+4. Click **Deploy**.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🔗 Use with CMS
 
-## Deploy on Vercel
+This frontend is designed to work with the accompanying Sanity Studio:
+👉 **Backend/CMS Repo:** [My Portfolio CMS](https://github.com/MinhNhatLuong/my-portfolio-cms)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🤝 Contributing
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Contributions are welcome! Please feel free to submit a Pull Request.
