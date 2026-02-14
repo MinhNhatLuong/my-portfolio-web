@@ -111,6 +111,17 @@
   }
 }
 
+@layer utilities {
+  .modal-scrollbar {
+    -ms-overflow-style: none;  /* hide scrollbar for Internet Explorer, Edge */
+    scrollbar-width: none;  /* hide scrollbar for Firefox */
+  }
+  
+  .modal-scrollbar::-webkit-scrollbar {
+    display: none; /* hide scrollbar for Chrome, Safari và Opera */
+  }
+}
+
 ::view-transition-old(root),
 ::view-transition-new(root) {
   animation: none;

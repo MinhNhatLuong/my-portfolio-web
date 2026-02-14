@@ -50,7 +50,7 @@ export function ProjectModal({
             initial={{ opacity: 0, scale: 0.95, y: 20 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.95, y: 20 }}
-            className="relative w-full md:max-w-3xl h-full md:h-auto md:max-h-[85vh] overflow-y-auto bg-background rounded-none md:rounded-2xl border border-border shadow-2xl scrollbar-hide flex flex-col"
+            className="relative w-full md:max-w-3xl h-full md:h-auto md:max-h-[85vh] overflow-y-auto bg-background rounded-none md:rounded-2xl shadow-2xl modal-scrollbar flex flex-col"
           >
             {/* Sticky Close Button */}
             <div className="sticky top-0 left-0 right-0 z-50 flex justify-end p-4 pointer-events-none">
@@ -81,7 +81,7 @@ export function ProjectModal({
                   />
                 )}
                 {/* Gradient overlay for better text contrast */}
-                <div className="absolute inset-0 bg-gradient-to-t from-background to-transparent opacity-80" />
+                <div className="absolute -bottom-px left-0 w-full h-[calc(50%+1px)] bg-gradient-to-t from-background via-background/60 to-background/0 pointer-events-none" />
               </div>
 
               {/* Detailed Content */}
