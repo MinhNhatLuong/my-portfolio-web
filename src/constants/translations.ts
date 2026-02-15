@@ -82,7 +82,7 @@ export const dictionaries: Record<"en" | "vi" | "ja", Translation> = {
     navbar: {
       home: "Home",
       about: "About",
-      portfolio: "Portfolio",
+      portfolio: "Projects",
       gallery: "Gallery",
       contact: "Contact",
       language: "Language",
