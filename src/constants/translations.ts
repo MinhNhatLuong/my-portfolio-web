@@ -14,6 +14,12 @@ type Translation = {
     language: string;
     theme: string;
   };
+  notFound: {
+    title: string;
+    description: string;
+    goHome: string;
+    goBack: string;
+  };
   home: {
     greeting: string;
     description: string;
@@ -87,6 +93,12 @@ export const dictionaries: Record<"en" | "vi" | "ja", Translation> = {
       contact: "Contact",
       language: "Language",
       theme: "Theme",
+    },
+    notFound: {
+      title: "Oops! Page Not Found",
+      description: "It seems you've wandered into a non-existent space. The link might be broken or the page has been removed.",
+      goHome: "Back to Home",
+      goBack: "Go Back",
     },
     home: {
       greeting: "Hi, I'm Asahi.",
@@ -166,6 +178,12 @@ export const dictionaries: Record<"en" | "vi" | "ja", Translation> = {
       language: "Ngôn ngữ",
       theme: "Giao diện",
     },
+    notFound: {
+      title: "Oops! Không tìm thấy trang",
+      description: "Có vẻ như bạn đã đi lạc vào một không gian không tồn tại. Đường link này có thể đã bị hỏng hoặc trang đã bị xóa.",
+      goHome: "Về Trang Chủ",
+      goBack: "Quay Lại",
+    },
     home: {
       greeting: "Chào, tôi là Asahi.",
       description:
@@ -243,6 +261,12 @@ export const dictionaries: Record<"en" | "vi" | "ja", Translation> = {
       contact: "連絡先",
       language: "言語",
       theme: "テーマ",
+    },
+    notFound: {
+      title: "おっと！ページが見つかりません",
+      description: "存在しないスペースに迷い込んだようです。リンクが壊れているか、ページが削除された可能性があります。",
+      goHome: "ホームに戻る",
+      goBack: "戻る",
     },
     home: {
       greeting: "こんにちは、アサヒです。",
