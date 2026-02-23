@@ -67,6 +67,7 @@ type Translation = {
     photosCount: string;
     newest: string;
     oldest: string;
+    notFound: string;
   };
   contact: {
     title: string;
@@ -153,6 +154,7 @@ export const dictionaries: Record<"en" | "vi" | "ja", Translation> = {
       photosCount: "photos",
       newest: "Newest",
       oldest: "Oldest",
+      notFound: "No images have been uploaded yet."
     },
     contact: {
       title: "Get in Touch",
@@ -237,6 +239,7 @@ export const dictionaries: Record<"en" | "vi" | "ja", Translation> = {
       photosCount: "ảnh",
       newest: "Mới nhất",
       oldest: "Cũ nhất",
+      notFound: "Chưa có ảnh nào được tải lên."
     },
     contact: {
       title: "Liên Hệ",
@@ -321,6 +324,7 @@ export const dictionaries: Record<"en" | "vi" | "ja", Translation> = {
       photosCount: "枚",
       newest: "新しい順",
       oldest: "古い順",
+      notFound: "画像はまだアップロードされていません。"
     },
     contact: {
       title: "お問い合わせ",
