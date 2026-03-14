@@ -260,7 +260,7 @@ export const dictionaries: Record<"en" | "vi" | "ja", Translation> = {
     navbar: {
       home: "ホーム",
       about: "私について",
-      portfolio: "ポートフォリオ",
+      portfolio: "プロジェクト",
       gallery: "ギャラリー",
       contact: "連絡先",
       language: "言語",
