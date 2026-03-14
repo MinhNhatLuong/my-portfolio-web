@@ -379,7 +379,14 @@ export default function GalleryPage() {
 
             <div className="mb-10 text-center max-w-2xl mx-auto">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                {selectedAlbum.title}
+                {selectedAlbum.title} - {new Date(selectedAlbum.date).toLocaleDateString(
+                        language === "vi"
+                          ? "vi-VN"
+                          : language === "ja"
+                            ? "ja-JP"
+                            : "en-US",
+                        { year: "numeric", month: "long", day: "numeric" },
+                      )}
               </h2>
               <p className="text-muted-foreground text-lg leading-relaxed">
                 {selectedAlbum.description?.[language as "en" | "vi" | "ja"] ||

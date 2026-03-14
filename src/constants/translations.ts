@@ -49,6 +49,7 @@ type Translation = {
     viewCode: string;
     viewDemo: string;
     techStack: string;
+    keyProjects: string;
     archiveTitle: string;
     archiveSubtitle: string;
     filterTech: string;
@@ -136,6 +137,7 @@ export const dictionaries: Record<"en" | "vi" | "ja", Translation> = {
       viewCode: "Source",
       viewDemo: "Live Demo",
       techStack: "Tech Stack",
+      keyProjects: "Key Projects",
       archiveTitle: "All Projects",
       archiveSubtitle: "Explore my entire coding journey.",
       filterTech: "Filter by Tech",
@@ -174,7 +176,7 @@ export const dictionaries: Record<"en" | "vi" | "ja", Translation> = {
     navbar: {
       home: "Trang chủ",
       about: "Giới thiệu",
-      portfolio: "Dự án IT",
+      portfolio: "Dự án",
       gallery: "Nhiếp ảnh",
       contact: "Liên hệ",
       language: "Ngôn ngữ",
@@ -187,21 +189,19 @@ export const dictionaries: Record<"en" | "vi" | "ja", Translation> = {
       goBack: "Quay Lại",
     },
     home: {
-      greeting: "Chào, tôi là Asahi.",
+      greeting: "Chào, tui là Asahi.",
       description:
-        "Tôi viết phần mềm & lưu giữ khoảnh khắc. Chào mừng đến với khu vườn số của tôi.",
-      btnCode: "Xem Code",
+        "Tui đi code & hay đi chụp hình dạo. Chào mừng đến với trang cá nhân của tui.",
+      btnCode: "Xem Dự án",
       btnGallery: "Xem Ảnh",
       roles: [
         "Kỹ sư phần mềm",
         "Nhiếp ảnh gia",
-        "Người yêu công nghệ",
-        "Người kể chuyện",
       ],
     },
     about: {
       title: "Giới thiệu",
-      subtitle: "Hiểu thêm về tôi và hành trình phát triển.",
+      subtitle: "Đây là những gì bạn sẽ biết về tui.",
       tableOfContents: "Mục lục",
       infoTitle: "Thông tin chung",
       role: "Chức danh",
@@ -216,11 +216,12 @@ export const dictionaries: Record<"en" | "vi" | "ja", Translation> = {
       native: "Bản ngữ",
     },
     projects: {
-      title: "Dự án Nổi bật",
+      title: "Dự án",
       subtitle: "Dưới đây là một số dự án tôi đã thực hiện.",
       viewCode: "Mã nguồn",
       viewDemo: "Xem Demo",
       techStack: "Công nghệ",
+      keyProjects: "Dự án nổi bật",
       archiveTitle: "Kho Lưu Trữ",
       archiveSubtitle: "Toàn bộ hành trình lập trình của tôi.",
       filterTech: "Lọc Công nghệ",
@@ -301,11 +302,12 @@ export const dictionaries: Record<"en" | "vi" | "ja", Translation> = {
       native: "ネイティブ",
     },
     projects: {
-      title: "注目のプロジェクト",
+      title: "プロジェクト",
       subtitle: "これまでに取り組んだプロジェクトの一部です。",
       viewCode: "ソース",
       viewDemo: "デモを見る",
       techStack: "技術スタック",
+      keyProjects: "注目のプロジェクト",
       archiveTitle: "プロジェクト一覧",
       archiveSubtitle: "私のコーディングの旅のすべて。",
       filterTech: "技術でフィルタ",
